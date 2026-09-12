@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { toast } from "react-toastify";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import TechGrid from "./components/TechGrid";
+import YourStack from "./components/YourStack";
 import Loader from "./components/Loader";
 import { useTechnologies } from "./hooks/useTechnologies";
 import type { Technology } from "./types/technology";
@@ -13,10 +15,24 @@ function App() {
     function handleAddToStack(technology: Technology) {
         const alreadyAdded = stack.some((item) => item.id === technology.id);
         if (alreadyAdded) {
-
+            toast.warning(`${technology.name} is already in your stack!`);
             return;
         }
         setStack((prev) => [...prev, technology]);
+        toast.success(`${technology.name} added to your stack`);
+    }
+
+    function handleRemove(id: number) {
+        const tech = stack.find((item) => item.id === id);
+        setStack((prev) => prev.filter((item) => item.id !== id));
+        if (tech) {
+            toast.info(`${tech.name} removed from your stack`);
+        }
+    }
+
+    function handleRemoveAll() {
+        setStack([]);
+        toast.info("All technologies removed from your stack");
     }
 
     return (
@@ -34,14 +50,15 @@ function App() {
 
                 <div className="mt-8 grid lg:grid-cols-4 gap-8">
                     <div className="lg:col-span-3">
-                        {loading ? <Loader /> : (
+                        {loading ? (
+                            <Loader />
+                        ) : (
                             <TechGrid technologies={technologies} stack={stack} onAdd={handleAddToStack} />
                         )}
                     </div>
 
-
                     <div className="lg:col-span-1">
-
+                        <YourStack stack={stack} onRemove={handleRemove} onRemoveAll={handleRemoveAll} />
                     </div>
                 </div>
             </section>

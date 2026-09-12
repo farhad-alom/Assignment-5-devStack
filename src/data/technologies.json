@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "name": "React",
+        "category": "Frontend",
+        "description": "A popular JavaScript library for building interactive user interfaces.",
+        "icon": "https://cdn.simpleicons.org/react",
+        "rating": 4.9,
+        "difficulty": "Intermediate",
+        "badge": "Popular"
+    },
+    {
+        "id": 2,
+        "name": "JavaScript",
+        "category": "Language",
+        "description": "A programming language used to create dynamic and interactive web applications.",
+        "icon": "https://cdn.simpleicons.org/javascript",
+        "rating": 4.9,
+        "difficulty": "Beginner-Friendly",
+        "badge": "Essential"
+    },
+    {
+        "id": 3,
+        "name": "TypeScript",
+        "category": "Language",
+        "description": "A typed superset of JavaScript that helps build safer applications.",
+        "icon": "https://cdn.simpleicons.org/typescript",
+        "rating": 4.8,
+        "difficulty": "Intermediate",
+        "badge": "Popular"
+    },
+    {
+        "id": 4,
+        "name": "Node.js",
+        "category": "Backend",
+        "description": "A JavaScript runtime used for building fast and scalable server-side applications.",
+        "icon": "https://cdn.simpleicons.org/nodedotjs",
+        "rating": 4.8,
+        "difficulty": "Intermediate",
+        "badge": "Fast"
+    },
+    {
+        "id": 5,
+        "name": "Express.js",
+        "category": "Backend",
+        "description": "A lightweight web framework for building APIs and backend applications with Node.js.",
+        "icon": "https://cdn.simpleicons.org/express",
+        "rating": 4.7,
+        "difficulty": "Intermediate",
+        "badge": "Essential"
+    },
+    {
+        "id": 6,
+        "name": "MongoDB",
+        "category": "Database",
+        "description": "A popular NoSQL database designed for flexible and scalable applications.",
+        "icon": "https://cdn.simpleicons.org/mongodb",
+        "rating": 4.7,
+        "difficulty": "Beginner-Friendly",
+        "badge": "Popular"
+    },
+    {
+        "id": 7,
+        "name": "MySQL",
+        "category": "Database",
+        "description": "A widely used relational database management system.",
+        "icon": "https://cdn.simpleicons.org/mysql",
+        "rating": 4.8,
+        "difficulty": "Intermediate",
+        "badge": "Essential"
+    },
+    {
+        "id": 8,
+        "name": "Tailwind CSS",
+        "category": "Styling",
+        "description": "A utility-first CSS framework for building modern and responsive user interfaces.",
+        "icon": "https://cdn.simpleicons.org/tailwindcss",
+        "rating": 4.8,
+        "difficulty": "Beginner-Friendly",
+        "badge": "Popular"
+    },
+    {
+        "id": 9,
+        "name": "CSS",
+        "category": "Styling",
+        "description": "A stylesheet language used to design and style web pages.",
+        "icon": "https://cdn.simpleicons.org/css",
+        "rating": 4.9,
+        "difficulty": "Beginner-Friendly",
+        "badge": "Essential"
+    },
+    {
+        "id": 10,
+        "name": "Docker",
+        "category": "DevOps",
+        "description": "A platform for building, packaging, and running applications in containers.",
+        "icon": "https://cdn.simpleicons.org/docker",
+        "rating": 4.7,
+        "difficulty": "Advanced",
+        "badge": "Containers"
+    },
+    {
+        "id": 11,
+        "name": "Git",
+        "category": "Tools",
+        "description": "A distributed version control system for tracking and managing code changes.",
+        "icon": "https://cdn.simpleicons.org/git",
+        "rating": 4.9,
+        "difficulty": "Beginner-Friendly",
+        "badge": "Essential"
+    },
+    {
+        "id": 12,
+        "name": "Vite",
+        "category": "Tools",
+        "description": "A fast development tool and build system for modern web projects.",
+        "icon": "https://cdn.simpleicons.org/vite",
+        "rating": 4.8,
+        "difficulty": "Beginner-Friendly",
+        "badge": "Fast"
+    }
+]

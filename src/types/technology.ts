@@ -7,4 +7,4 @@ export interface Technology {
     rating: number;
     difficulty: "Beginner-Friendly" | "Intermediate" | "Advanced";
     badge: string;
-}
+};

@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import TechGrid from "./components/TechGrid";
 import YourStack from "./components/YourStack";
 import Loader from "./components/Loader";
+import Footer from "./components/Footer";
 import { useTechnologies } from "./hooks/useTechnologies";
 import type { Technology } from "./types/technology";
 
@@ -36,11 +37,11 @@ function App() {
     }
 
     return (
-        <div className="min-h-screen bg-white">
+        <div className="min-h-screen bg-white flex flex-col">
             <Navbar />
             <Hero />
 
-            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex-1">
                 <h2 className="text-3xl font-extrabold text-gray-900">
                     Explore the <span className="text-brand-gradient">Technologies</span>
                 </h2>
@@ -62,8 +63,10 @@ function App() {
                     </div>
                 </div>
             </section>
+
+            <Footer />
         </div>
     );
-}
+};
 
 export default App;

@@ -4,9 +4,9 @@ export default function Hero() {
     return (
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
             <div className="grid md:grid-cols-2 gap-12 items-center">
-                {/* ===== Left: Text content ===== */}
+                {/*Left: Text content */}
                 <div>
-                    <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight text-gray-900">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-gray-900">
                         Build Your Ideal <br />
                         <span className="text-brand-gradient">Development Stack</span>
                     </h1>
@@ -27,7 +27,7 @@ export default function Hero() {
                     </div>
                 </div>
 
-                {/* ===== Right: Banner Image ===== */}
+                {/*Right: Banner Image*/}
                 <div className="flex justify-center md:justify-end">
                     <img
                         src={heroImage}
